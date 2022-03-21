@@ -1,0 +1,37 @@
+<div>
+  <div>
+    <div>Register</div>
+    <form [formGroup]="registerFrom">
+      <mat-form-field>
+        <input
+          id="name"
+          matInput
+          formControlName="name"
+          [(ngModel)]="user.name"
+          placeholder="Enter your name"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          id="email"
+          matInput
+          formControlName="email"
+          [(ngModel)]="user.email"
+          placeholder="Enter your email"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          id="password"
+          matInput
+          formControlName="password"
+          [(ngModel)]="user.password"
+          placeholder="Enter your password"
+        />
+      </mat-form-field>
+      <button mat-button type="submit">Register</button>
+    </form>
+  </div>
+</div>
